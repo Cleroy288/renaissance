@@ -1,0 +1,18 @@
+En langage C, const char * est un type de pointeur utilisé pour représenter une chaîne de caractères. Le const indique 
+que la chaîne de caractères est en lecture seule, c'est-à-dire qu'elle ne peut pas être modifiée une fois qu'elle a été 
+définie. Les chaînes de caractères sont souvent définies en tant que tableaux de caractères, et le pointeur const 
+char * pointe vers le premier caractère de la chaîne.
+
+Il est important de noter que les chaînes de caractères en langage C sont terminées par un caractère nul, ou \0, qui 
+indique la fin de la chaîne. Ainsi, le pointeur const char * pointe non seulement vers le premier caractère de la 
+chaîne, mais aussi vers le caractère nul final qui marque la fin de la chaîne.
+
+Il est courant d'utiliser des pointeurs const char * pour passer des chaînes de caractères à des fonctions en C. Cela 
+permet aux fonctions de lire la chaîne sans la modifier, ce qui peut aider à prévenir les erreurs de programmation. 
+Les chaînes de caractères sont également utilisées pour stocker des données telles que des messages d'erreur, des noms 
+de fichiers et des informations utilisateur.
+
+Enfin, il est important de noter que les chaînes de caractères en langage C ont une longueur maximale de 4 294 967 295 
+caractères, car elles sont stockées en mémoire sous forme de tableaux. Cependant, les chaînes de caractères de cette 
+taille sont très rares en pratique, et la plupart des chaînes de caractères utilisées en programmation sont beaucoup 
+plus courtes.
