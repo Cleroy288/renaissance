@@ -1,0 +1,18 @@
+En langage C, void * est un type de pointeur générique qui peut pointer vers n'importe quel type de données, y compris 
+les types de données définis par l'utilisateur. La principale différence entre void * et les autres types de pointeurs 
+est que void * ne peut pas être déréférencé directement, c'est-à-dire qu'il ne peut pas être utilisé pour accéder à la 
+valeur stockée à l'adresse pointée.
+
+La raison pour laquelle les pointeurs void * sont utiles est qu'ils permettent de passer des données génériques à des 
+fonctions en C. Par exemple, si une fonction doit prendre en entrée des données de types différents, elle peut être 
+déclarée pour prendre un pointeur void * comme argument, puis la fonction peut utiliser un type cast pour convertir le 
+pointeur void * en un type de pointeur spécifique au type de données attendu.
+
+Il est également important de noter que les pointeurs void * sont souvent utilisés pour allouer de la mémoire 
+dynamiquement en C à l'aide de la fonction malloc(). La fonction malloc() renvoie un pointeur void * vers un bloc de 
+mémoire alloué, que l'on peut ensuite convertir en un type de pointeur spécifique au type de données attendu à l'aide 
+d'un type cast.
+
+En résumé, void * est un type de pointeur générique en langage C qui peut pointer vers n'importe quel type de données, 
+mais qui ne peut pas être déréférencé directement. Les pointeurs void * sont utiles pour passer des données génériques 
+des fonctions ou pour allouer de la mémoire dynamiquement en C.
