@@ -1,4 +1,3 @@
-
 /*
 vérifie si le caratère sur le quel on est un cartère , de nature minuscule et / ou majuscule.
 */

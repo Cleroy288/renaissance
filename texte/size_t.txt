@@ -1,0 +1,11 @@
+En langage C, size_t est un type de données utilisé pour représenter la taille d'un objet ou d'un tableau en octets. 
+C'est un type de données non signé, ce qui signifie qu'il ne peut pas avoir de valeurs négatives. 
+La taille maximale d'un size_t dépend de l'architecture du système et du compilateur utilisé, mais elle est 
+généralement suffisamment grande pour représenter la taille de tous les objets possibles sur la plateforme cible. 
+Par exemple, sur une architecture 64 bits, la taille maximale d'un size_t est de 2^64-1.
+
+Il est avantageux d'utiliser size_t plutôt qu'un int pour représenter des tailles d'objets ou des indices car size_t est
+ conçu pour représenter des tailles d'objets, ce qui rend son utilisation plus explicite et plus facile à comprendre 
+pour les développeurs. En outre, size_t est un type de données non signé, ce qui évite les erreurs de signe lors de 
+l'utilisation de la taille ou de l'indice dans des calculs ou des comparaisons. Enfin, size_t est garantie 
+d'avoir la même taille sur toutes les plates-formes, ce qui assure la portabilité du code.
