@@ -50,6 +50,25 @@ int	main(int argc, char **argv)
 	}
 	printf("result ft_ (int) => %d\n", ft_memcmp(argv[1], argv[2], ft_atoi(argv[3])));
 	printf("vrai funct (int) => %d\n", (memcmp(argv[1], argv[2], ft_atoi(argv[3]))));
+	if (ft_memcmp(argv[1], argv[2], ft_atoi(argv[3])) != 0)
+	{
+		size_t	j = 0;
+		printf("l'index a le pas dépaser est => %d\n", ft_atoi(argv[3]));
+		while (argv[1][j] && argv[2][j] && j < ft_atoi(argv[3]) - 2)
+		{
+			while (argv[1][j] == argv[2][j])
+			{
+				printf("jusqua mnt c'est la même chose => argv[1][%c] à l'index => [%zu] et argv[2][%c] à l'index => [%zu]\n", argv[1][j], j, argv[2][j], j);
+				j++;
+			}
+			if (argv[1][j] != argv[2][j])
+				printf("la différence se situe a l'index => [%zu], sur la caractère de argv[1][%c] et argv[2][%c]\n", j, argv[1][j], argv[2][j]);
+				break;
+			j++;
+		}
+	}
+	else
+		printf("pas de diff entre argv[1] => <<%s>> et argv[2] => <<%s>>\n", argv[1], argv[2]);
 }
 
 /*
