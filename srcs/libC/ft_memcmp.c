@@ -51,3 +51,18 @@ int	main(int argc, char **argv)
 	printf("result ft_ (int) => %d\n", ft_memcmp(argv[1], argv[2], ft_atoi(argv[3])));
 	printf("vrai funct (int) => %d\n", (memcmp(argv[1], argv[2], ft_atoi(argv[3]))));
 }
+
+/*
+est il necessaire de cats selon gpt ? => Dans le code que vous avez partagé, il est utile de caster les pointeurs s1 et s2 en 
+pointeurs vers unsigned char, car la fonction ft_memcmp() compare des données binaires (i.e., des octets). Si les pointeurs 
+n'étaient pas castés, le compilateur pourrait générer des avertissements ou des erreurs pour vous informer que vous comparez des 
+données de type différent.
+
+Cela dit, le cast en "unsigned" n'est pas toujours nécessaire dans tous les cas. Tout dépend du contexte de votre application et 
+du type de données que vous manipulez. Par exemple, si vous travaillez avec des chaînes de caractères ASCII qui ne contiennent que 
+des caractères imprimables, alors les données ne dépasseront probablement jamais la plage de 0 à 127, et il ne sera peut-être pas 
+nécessaire de les caster en "unsigned".
+
+En résumé, caster les chaînes de caractères en "unsigned" peut être une bonne pratique pour éviter les problèmes de débordement et 
+de manipulation des données binaires, mais cela dépend du contexte de votre application et du type de données que vous manipulez.
+*/
