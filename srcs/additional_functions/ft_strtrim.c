@@ -14,58 +14,83 @@ Description
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_is_set(const char c, const char *set)
+int	ft_is_set(char const c, char const *set)
 {
-	size_t	i;
+	int	i;
 
 	i = -1;
 	while (set[++i])
+	{
 		if (c == set[i])
 			return (1);
+		if (c >= 'a' && c <= 'z' && c >= 'A' && c <= 'Z')
+			return (2);
+	}
 	return (0);
 }
 
-size_t	ft_new_len(char const *s1, char const *set)
+int	ft_strlen(char const *str)
 {
-	long long int	count;
-	size_t		i;
+	int i = -1;
+	while (str[++i])
+		;
+	return (i);
+}
 
-	count = 0;
-	i = -1;
-	while (s1[++i])
-	{
-		if (ft_is_set(s1[i], set) == 1)
-			count++;
-	}
-	return ((size_t)(i - count));
+int	ft_index_last_word(char const *s1, char const *set)
+{
+	int i;
+
+	i = ft_strlen(s1);
+	while (s1[i--] != 32)
+		;
+	if (s1[i] == 32)
+		i++;
+	if (s1[i] != '\0')
+		return (i);
+	return (0);
 }
 
 char *ft_strtrim(char const *s1, char const *set)
 {
-	unsigned char	*str;
-	size_t		i;
-	size_t		j;
-
-	i = -1;
-	j = -1;
-	if (!str)
-		return (0);
-	if (!set)
-		return ((char *)s1);
-	str = malloc(sizeof(char) * (ft_new_len(s1, set) + 1));
-	if (!str)
-		return (0);
-	while (s1[++i])
-	{
-		if (s1[i] && ft_is_set(s1[i], set) == 0)
-			str[++j] = s1[i];
-	}
-	str[++j] = '\0';
-	return ((char *)str);
+	int	i;
+	int	j;
+	int	k;
+	char	*str;
+	
+	i = 0;
+	j = 0;
+	k = ft_index_last_word(s1, set);
+	str = malloc(sizeof(char) * (ft_strlen(s1) + 1));
+	while (ft_is_set(s1[i], set) == 1)
+		i++;
+	while (ft_is_set(s1[i], set) == 0)
+		str[j++] = s1[i++];
+	while (i <= k)
+		str[j++] = s1[i++];
+	while (s1[i] && ft_is_set(s1[i], set) == 0)
+		str[j++] = s1[i++];
+	str[j] = '\0';
+	return (str);
 }
 
 int	main(int argc, char **argv)
 {
-	char	*str = ft_strtrim(argv[1], argv[2]);
-	printf("résultat => <<%s>>\n", str);
+
+	char const  	string[] = "gensgens les gens lol gens";
+	char const	set[] = "gens";
+	int i = -1;
+	printf("string au complet\n");
+	while (string[++i])
+		printf("char [%c] a index %d\n", string[i], i);
+	printf("de la string => <<%s>>\n\n", string);
+
+	char	*str2 = ft_strtrim(string, set);
+	int	len_str = -1;
+	while (str2[++len_str])
+		printf("le char [%c] a l'index =>%d\n", str2[len_str], len_str);
+
+	printf("résultat => <<%s>>\n", str2);
+
+	free(str2);
 }
