@@ -26,6 +26,8 @@ typedef struct	s_list
 t_list *ft_lstlast(t_list *lst)
 {
 	int i = 0;
+	if (!lst)
+		return (0);
 	while (lst->next)
 	{
 		i++;
