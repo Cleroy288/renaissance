@@ -13,9 +13,9 @@ Description
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_strlen(char const *s)
+unsigned int	ft_strlen(char const *s)
 {
-	int	i;
+	unsigned int	i;
 
 	i = -1;
 	while (s[++i])
@@ -43,8 +43,9 @@ char	ft_f(unsigned int pos, char c)
 	printf("index => [%d], char =>%c\n", pos, c);
 	return (c);
 }
-
+/*
 int	main()
 {
 	char	*str = ft_strmapi("bonjour", &ft_f);
-}
+	printf("%s\n", str)
+}*/
