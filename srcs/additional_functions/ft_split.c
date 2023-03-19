@@ -118,7 +118,7 @@ void	ft_putstr(char *str)
 		write (1, &str[i], 1);
 }
 
-int	main(int argc , char **argv)
+int	main()
 {
 	printf("input 1 ==> string a split, input 2 ==> separateur (attention que le prmeier char)\n");
 	while (1)
