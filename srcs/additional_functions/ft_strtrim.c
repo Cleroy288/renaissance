@@ -37,7 +37,7 @@ int	ft_strlen(char const *str)
 	return (i);
 }
 
-int	ft_index_last_word(char const *s1, char const *set)
+int	ft_index_last_word(char const *s1) //char const *set)
 {
 	int i;
 
@@ -60,7 +60,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	
 	i = 0;
 	j = 0;
-	k = ft_index_last_word(s1, set);
+	k = ft_index_last_word(s1); //set);
 	str = malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	while (ft_is_set(s1[i], set) == 1)
 		i++;
@@ -73,7 +73,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	str[j] = '\0';
 	return (str);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 
@@ -93,4 +93,4 @@ int	main(int argc, char **argv)
 	printf("résultat => <<%s>>\n", str2);
 
 	free(str2);
-}
+}*/
