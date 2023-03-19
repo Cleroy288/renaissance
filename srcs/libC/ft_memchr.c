@@ -55,6 +55,7 @@ Le pointeur est en fait une adresse de mémoire, qui est représentée en hexad�
 en décimal, le compilateur convertit l'adresse hexadécimale en nombre entier. C'est pourquoi la valeur que vous 
 voyez est un nombre assez grand.
 */
+/*
 int	main(int argc, char **argv)
 {
 	size_t i = 0;
@@ -75,4 +76,4 @@ int	main(int argc, char **argv)
 
 	printf("result ft_ (en int) => %d\n", ft_memchr(argv[1], argv[2][0], ft_atoi(argv[3])));
 	printf("vrai funct (en int) => %d\n", (memchr(argv[1], argv[2][0], ft_atoi(argv[3]))));
-}
+}*/
