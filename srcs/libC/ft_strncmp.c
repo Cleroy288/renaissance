@@ -1,5 +1,7 @@
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+
+#include "../libft.h"
 
 //mine => handmade 
 int ft_strncmp_2(const char *s1, const char *s2, size_t n)
@@ -11,7 +13,7 @@ int ft_strncmp_2(const char *s1, const char *s2, size_t n)
 		i++;
 	return (s1[i] - s2[i]);
 }
-
+/*
 // exemple => pas le mien
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -63,4 +65,4 @@ int	main(int argc, char **argv)
 		printf("result ft_2(mine) => %d\n", ft_strncmp_2(argv[1], argv[2], nb));
 		printf("vrai fonction => %d\n", strncmp(argv[1], argv[2], nb));
 
-}
+}*/

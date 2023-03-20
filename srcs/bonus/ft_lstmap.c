@@ -26,10 +26,13 @@ peut elle etre chnagé ?
 est ce ok ?
 on verra
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "../libft.h"
+/*
 #ifndef FT_STRUCT_H
 # define FT_STRUCT_H
 
@@ -40,8 +43,8 @@ typedef	struct	s_list
 }			t_list;
 
 #endif
-
-t_list	*ft_create_elem(void *data)
+*/
+t_list	*ft_create_elem_1(void *data)
 {
 	t_list	*node;
 
@@ -52,7 +55,7 @@ t_list	*ft_create_elem(void *data)
 	node->next = NULL;
 	return (node);
 }
-
+/*
 t_list	*ft_new(t_list *new, t_list *lst, void *(*f)(void *))
 {
 	t_list	*start;
@@ -67,6 +70,9 @@ t_list	*ft_new(t_list *new, t_list *lst, void *(*f)(void *))
 	new = start;
 	return (new);
 }
+*/
+
+#include "../libft.h"
 
 t_list	*ft_copy_list(t_list *lst, t_list *new)
 {
@@ -76,7 +82,7 @@ t_list	*ft_copy_list(t_list *lst, t_list *new)
 	start = new;
 	while (lst)
 	{
-		new = ft_create_elem(lst->content);
+		new = ft_create_elem_1(lst->content);
 		lst = lst->next;
 		new = new->next;
 	}
@@ -89,7 +95,8 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;
 	t_list	*start;
-	
+
+	new = NULL;	
 	if (lst)
 	{
 		new = ft_copy_list(lst, new);
@@ -107,7 +114,7 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	del(new);
 	return (new);
 }
-
+/*
 void	*ft_f(void *pt)
 {
 	char	*str = malloc(sizeof(char) * 20);
@@ -185,4 +192,4 @@ int	main()
 //	t_list	*fault = ft_lstmap(seg, &ft_f, &ft_del);
 //	printf("%s\n", ((char *)fault->content));
 
-}
+}*/

@@ -11,8 +11,7 @@ Description
 	from the beginning and the end of the string
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "../libft.h"
 
 int	ft_is_set(char const c, char const *set)
 {
@@ -28,7 +27,7 @@ int	ft_is_set(char const c, char const *set)
 	}
 	return (0);
 }
-
+/*
 int	ft_strlen(char const *str)
 {
 	int i = -1;
@@ -36,7 +35,7 @@ int	ft_strlen(char const *str)
 		;
 	return (i);
 }
-
+*/
 int	ft_index_last_word(char const *s1) //char const *set)
 {
 	int i;

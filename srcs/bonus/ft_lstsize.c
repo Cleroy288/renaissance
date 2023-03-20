@@ -9,7 +9,7 @@ description
 		Counts the number of nodes in a list.
 
 */
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,6 +23,9 @@ typedef	struct	s_list
 }			t_list;
 
 #endif
+*/
+
+#include "../libft.h"
 
 int ft_lstsize(t_list *lst)
 {
@@ -34,7 +37,7 @@ int ft_lstsize(t_list *lst)
 			lst = lst->next;
 	return (len);
 }
-
+/*
 t_list	*ft_create_elem(t_list *created, void *data)
 {
 	created = NULL;
@@ -68,4 +71,4 @@ int		main(void)
 	}
 	printf("%d\n", ft_lstsize(begin));
 	return (0);
-}
+}*/

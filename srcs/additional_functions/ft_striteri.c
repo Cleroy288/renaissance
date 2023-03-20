@@ -9,7 +9,7 @@ Description
 	address to ’f’ to be modified if necessary.
 */
 
-#include <stdio.h>
+#include "../libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -21,12 +21,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 			f(i, &s[i]);
 }
 
-void	ft_f(unsigned int pos, char *c)
-{
-	printf("index => [%d], char =>%s\n", pos, c);
-}
-
-int	main()
-{
-	ft_striteri("bonjour", &ft_f);
-}

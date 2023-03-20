@@ -7,7 +7,7 @@ Description
 	followed by a newline.
 */
 
-#include <unistd.h>
+#include "../libft.h"
 
 void	ft_f(char *s, int fd, int i)
 {
@@ -26,7 +26,3 @@ void 	ft_putendl_fd(char *s, int fd)
 	write (fd, "\n", 1);
 }
 
-int	main()
-{
-	ft_putendl_fd("bonjour les gens", 0);
-}

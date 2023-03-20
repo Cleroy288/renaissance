@@ -10,7 +10,7 @@ Description
 		as a parameter and free the node.  The memory of
 		’next’ must not be freed.
 */
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -44,6 +44,9 @@ void	ft_del(void *pt)
 {
 	pt = pt;
 }
+*/
+
+#include "../libft.h"
 
 void ft_lstdelone(t_list *lst, void (*del)(void*))
 {
@@ -54,7 +57,7 @@ void ft_lstdelone(t_list *lst, void (*del)(void*))
 		free(lst);
 	}
 }
-
+/*
 int	main()
 {
 	t_list	*elem1;
@@ -97,4 +100,4 @@ int	main()
 		printf("elem1->content == free (segfaul si tu retire le ! du if ci dessus)\n");
 }
 
-
+*/

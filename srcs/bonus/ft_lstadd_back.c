@@ -6,7 +6,7 @@ parameters
 description
 		Adds the node ’new’ at the end of the list.
 */
-
+/*
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -32,6 +32,9 @@ t_list	*ft_new_nod(t_list *new, void *data)
 	new->next = NULL;
 	return (new);
 }
+*/
+
+#include "../libft.h"
 
 //ca a rendre
 void ft_lstadd_back(t_list **lst, t_list *new)
@@ -47,7 +50,7 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 		lst = &(*lst)->next;
 	(*lst)->next = new;
 }
-
+/*
 int		main(void)
 {
 	t_list	elem1, elem2, elem3, *begin;
@@ -70,4 +73,4 @@ int		main(void)
 		begin = begin->next;
 	}
 	return (0);
-}
+}*/

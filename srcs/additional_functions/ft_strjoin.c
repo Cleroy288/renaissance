@@ -11,8 +11,8 @@ Description;
 	string, which is the result of the concatenation
 	of ’s1’ and ’s2’.
 */
-#include <stdio.h>
-#include <stdlib.h>
+
+#include "../libft.h"
 
 size_t	ft_strlen_2(char const *str)
 {
@@ -24,7 +24,7 @@ size_t	ft_strlen_2(char const *str)
 	return (i);
 }
 
-size_t	ft_strlen(char const *s1, char const *s2)
+size_t	ft_strlen_3(char const *s1, char const *s2)
 {
 	size_t	i;
 	size_t	j;
@@ -50,12 +50,13 @@ char *ft_strjoin(char const *s1, char const *s2)
 	size_t		i;
 	unsigned char	*str;
 
+	str = NULL;
 	len_str = -1;
 	i = -1;
 	if (!s1 && !s2)
 		return (0);
 	if (s1 || s2)
-		str = malloc(sizeof(char) * (ft_strlen(s1, s2) + 1));
+		str = malloc(sizeof(char) * (ft_strlen_3(s1, s2) + 1));
 	if (!str)
 		return (0);
 	if (s1)
@@ -68,7 +69,7 @@ char *ft_strjoin(char const *s1, char const *s2)
 	str[len_str + 1] = '\0';
 	return ((char *)str);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	char	*str_arg;
@@ -76,8 +77,8 @@ int	main(int argc, char **argv)
 	if (argv[1] || argv[2])
 		str_arg = ft_strjoin(argv[1], argv[2]);
 
-	char	*str2 = /*NULL;*/"bon je suis pas sure ";
-	char	*str3 = /*NULL;*/"mais si ca passe je suis un génie";
+	char	*str2 = NULL;"bon je suis pas sure ";
+	char	*str3 = NULL;"mais si ca passe je suis un génie";
 	char	*str = ft_strjoin(str2, str3);
 	if (str2)
 		printf("string str2[%zu] ==> <<%s>>\n", ft_strlen_2(str2), str2);
@@ -92,4 +93,4 @@ int	main(int argc, char **argv)
 	if (str_arg)
 		printf("string str_arg[%zu] ==> <<%s>>\n", ft_strlen(argv[1], argv[2]), str_arg);
 	
-}
+}*/

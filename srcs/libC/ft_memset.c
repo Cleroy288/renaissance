@@ -1,4 +1,6 @@
-#include <stdlib.h>
+//#include <stdlib.h>
+
+#include "../libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -15,7 +17,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
+/*
 #include <stdio.h>
 
 int	main(int argc, char **argv)
@@ -37,4 +39,4 @@ int	main(int argc, char **argv)
 		}
 		printf("nombre de cartères %d, (%c) dans la string mnt ; %d\n", c, c, count);
 	}
-}
+}*/

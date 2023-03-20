@@ -1,4 +1,6 @@
-#include <stdlib.h>
+//#include <stdlib.h>
+
+#include "../libft.h"
 
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
@@ -15,7 +17,7 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 
 }
 
-
+/*
 int	ft_atoi(char *str)
 {
 	int res = 0;
@@ -44,4 +46,4 @@ int	main(int argc, char **argv)
 		printf("%s", ret);
 	}
 	return (0);
-}
+}*/

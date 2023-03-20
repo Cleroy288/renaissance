@@ -8,7 +8,7 @@ parameters
 description
 	Adds the node ’new’ at the beginning of the list.
 */
-
+/*
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -34,6 +34,9 @@ t_list	*ft_create_elem(t_list *created, void *data)
 	created->next = NULL;
 	return (created);
 }
+*/
+
+#include "../libft.h"
 
 void ft_lstadd_front(t_list **lst, t_list *new)
 {
@@ -68,6 +71,7 @@ void	ft_lstadd_front(t_list **alst, t_list *new)
 }
 
 */
+/*
 int		main(void)
 {
 	t_list	elem1, elem2, elem3, *begin;
@@ -90,4 +94,4 @@ int		main(void)
 		begin = begin->next;
 	}
 	return (0);
-}
+}*/

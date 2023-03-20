@@ -1,6 +1,9 @@
-#include <stdio.h>
+/*#include <stdio.h>
 #include <libc.h>
 #include <string.h>
+*/
+
+#include "../libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -17,7 +20,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (i);
 }
-
+/*
 size_t	ft_strlen(const char *str)
 {
 	size_t i = -1;
@@ -41,4 +44,4 @@ int	main(int argc, char **argv)
 
 	printf("strlcpy <<%s>>\n", dest3);
 	printf("len strlcpy ; %d\n", z);
-}
+}*/

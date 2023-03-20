@@ -8,8 +8,7 @@ Description
 	Negative numbers must be handled.
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "../libft.h"
 
 int	ft_len(int n)
 {
@@ -50,10 +49,10 @@ char *ft_itoa(int n)
 	}
 	return (numb);
 }
-
+/*
 int	main()
 {
 	int	nb = 10000090;
 	printf("%d => len\n", ft_len(nb));
 	printf("%s result \n", ft_itoa(nb));
-}
+}*/

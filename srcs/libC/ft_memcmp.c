@@ -1,5 +1,9 @@
+/*
 #include <stdio.h>
 #include <string.h>
+*/
+
+#include "../libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -10,7 +14,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		;
 	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 }
-
+/*
 int	ft_atoi(char *str)
 {
 	int i = 0;
@@ -70,7 +74,7 @@ int	main(int argc, char **argv)
 	else
 		printf("pas de diff entre argv[1] => <<%s>> et argv[2] => <<%s>>\n", argv[1], argv[2]);
 }
-
+*/
 /*
 est il necessaire de cats selon gpt ? => Dans le code que vous avez partagé, il est utile de caster les pointeurs s1 et s2 en 
 pointeurs vers unsigned char, car la fonction ft_memcmp() compare des données binaires (i.e., des octets). Si les pointeurs 

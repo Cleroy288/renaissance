@@ -7,7 +7,7 @@ Description
 	descriptor.
 */
 
-#include <unistd.h>
+#include "../libft.h"
 
 void ft_putstr_fd(char *s, int fd)
 {
@@ -19,10 +19,3 @@ void ft_putstr_fd(char *s, int fd)
 			write (fd, &s[i], 1);
 }
 
-int	main()
-{
-	int	fd = 0;
-	char	*str = NULL;
-	ft_putstr_fd("bonjour les gens", fd);
-	ft_putstr_fd(str, fd);
-}

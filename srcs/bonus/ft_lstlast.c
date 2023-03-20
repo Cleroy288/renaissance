@@ -7,7 +7,7 @@ return value
 description
 		Returns the last node of the list.
 */
-
+/*
 #ifndef	FT_STRUCT_H
 # define FT_STRUCT_H
 
@@ -21,6 +21,9 @@ typedef struct	s_list
 
 #include <stdio.h>
 #include <stdlib.h>
+*/
+
+#include "../libft.h"
 
 //ça a rendre.
 t_list *ft_lstlast(t_list *lst)
@@ -36,7 +39,7 @@ t_list *ft_lstlast(t_list *lst)
 	}
 	return (lst);
 }
-
+/*
 int	main()
 {
 	t_list	elem1, elem2, elem3, *begin;
@@ -61,4 +64,4 @@ int	main()
 	start = ft_lstlast(begin);
 	printf("la fin (*start) après begin mis dans ft_ => <<%s>>\n", ((char *)start->content));
 	return (0);
-}
+}*/

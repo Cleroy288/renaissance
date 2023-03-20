@@ -1,5 +1,8 @@
 
-#include <stdlib.h>
+//#include <stdlib.h>
+
+#include "../libft.h"
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -9,7 +12,7 @@ size_t	ft_strlen(const char *s)
 		;
 	return (i);
 }
-
+/*
 #include <stdio.h>
 
 int main( int argc, char **argv)
@@ -23,4 +26,4 @@ int main( int argc, char **argv)
 			i++;
 		}
 	}
-}
+}*/

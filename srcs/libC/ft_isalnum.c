@@ -20,13 +20,16 @@
      164 ``t'' 165 ``u'' 166 ``v'' 167 ``w'' 170 ``x''
      171 ``y'' 172 ``z''
 */
+
+#include "../libft.h"
+
 int	ft_isalnum(int c)
 {
 	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }
-
+/*
 #include <stdio.h>
 int	main()
 {
@@ -34,4 +37,4 @@ int	main()
 	unsigned char c = 65;
 	printf("%d\n", ft_isalnum(nb));
 	printf("%d\n", ft_isalnum(c));
-}
+}*/

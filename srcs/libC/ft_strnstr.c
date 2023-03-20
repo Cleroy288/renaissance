@@ -1,6 +1,9 @@
-#include <string.h>
-#include <stdio.h>
+//#include <string.h>
+//#include <stdio.h>
 
+#include "../libft.h"
+
+/*
 int	ft_strlen(const char *str)
 {
 	size_t	i;
@@ -10,13 +13,13 @@ int	ft_strlen(const char *str)
 		;
 	return (i);
 }
-
+*/
 int	ft_is_word(const char *str, int pos, const char *word, size_t len)
 {
 	size_t	i;
 
 	i = 0;
-	while (str[pos] == word[i] && pos < len)
+	while (str[pos] == word[i] && (size_t)pos < len)
 	{
 		i++;
 		pos++;
@@ -42,7 +45,7 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
+/*
 int	ft_atoi(char *str)
 {
 	int i = 0;
@@ -70,4 +73,4 @@ int	main(int argc, char **argv)
 	printf("résultat de ft => %s\n", ft_strnstr(argv[1], argv[2], ft_atoi(argv[3])));
 	printf("resultat vrai fonction => %s\n", strnstr(argv[1], argv[2], ft_atoi(argv[3])));
 }
-
+*/

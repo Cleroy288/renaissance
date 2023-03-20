@@ -25,13 +25,15 @@ The isprint() function tests for any printing character, including space (‘ �
      172 ``z'' 173 ``{'' 174 ``|'' 175 ``}'' 176 ``~''
 */
 
+#include "../libft.h"
+
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int	main(int argc, char **argv)
@@ -45,4 +47,4 @@ int	main(int argc, char **argv)
 			i++;
 		}
 	}
-}
+}*/

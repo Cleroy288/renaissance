@@ -13,7 +13,7 @@ Parameters
 
 
 */
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -48,7 +48,9 @@ t_list	*ft_create_elem(void *data)
 	node->next = NULL;
 	return (node);
 }
+*/
 
+#include "../libft.h"
 
 void ft_lstclear(t_list **lst, void (*del)(void*))
 {
@@ -66,7 +68,7 @@ void ft_lstclear(t_list **lst, void (*del)(void*))
 	(*lst) = NULL;
 	}
 }
-
+/*
 int	main()
 {
 	t_list	*elem1;
@@ -99,4 +101,4 @@ int	main()
 	printf("si t'essaye de l'afficher en retirant le comm ==> segfault psk espace mémorie != alloué\n");
 	printf("pointeur tmp ==> peux pas passer à élément next d'un élément free result == segfault\n");
 	printf("(*lst) = NULL ==> alloué NULL = mieux, (etre sure)*lst pointe plus vers adress valide\n");	
-}
+}*/

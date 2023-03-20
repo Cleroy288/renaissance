@@ -10,10 +10,9 @@ Description
 	from successive applications of ’f’.
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "../libft.h"
 
-unsigned int	ft_strlen(char const *s)
+unsigned int	ft_strlen_1(char const *s)
 {
 	unsigned int	i;
 
@@ -29,21 +28,21 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int		i;
 
 	i = -1;
-	res = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	res = malloc(sizeof(char) * (ft_strlen_1(s) + 1));
 	if (!res)
 		return (0);
-	while (++i < ft_strlen(s))
+	while (++i < ft_strlen_1(s))
 		res[i] = f(i, s[i]);
 	res[++i] = '\0';
 	return (res);
 }
-
+/*
 char	ft_f(unsigned int pos, char c)
 {
 	printf("index => [%d], char =>%c\n", pos, c);
 	return (c);
 }
-/*
+
 int	main()
 {
 	char	*str = ft_strmapi("bonjour", &ft_f);

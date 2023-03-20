@@ -1,6 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
+
+#include "../libft.h"
 
 char	*ft_strdup(const char* s)
 {
@@ -15,7 +17,7 @@ char	*ft_strdup(const char* s)
 		s2[i] = s[i];
 	return ((char *)s);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	char	*s1 = argv[1];
@@ -30,4 +32,4 @@ int	main(int argc, char **argv)
 	s1_2 = NULL;
 	s2_2 = strdup(s1_2);
 	printf("%s\n", s2_2);
-}
+}*/

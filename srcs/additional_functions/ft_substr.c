@@ -19,10 +19,10 @@ crash => no
 return val => ok
 protection => ok
 */
-#include <stdio.h>
-#include <stdlib.h>
 
-size_t	ft_strlen(char const *s)
+#include "../libft.h"
+
+size_t	ft_strlen_1(char const *s)
 {
 	size_t	i;
 
@@ -46,9 +46,9 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	if ((long long int)start < 0)
 		start *= -1;
 	printf ("start %d\n", start);
-	if (len + start > ft_strlen(s))
+	if (len + start > ft_strlen_1(s))
 	{
-		printf("len + start (%lu) > ft_strlen(s) (%zu) == > return (0);\n", len + start, ft_strlen(s));
+		printf("len + start (%lu) > ft_strlen(s) (%zu) == > return (0);\n", len + start, ft_strlen_1(s));
 		return (0);
 	}
 	s2 = malloc(sizeof(char) * (len + 1));
@@ -59,7 +59,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	s2[len] = '\0';
 	return ((char *)s2);
 }
-
+/*
 int	ft_atoi(char *str)
 {
 	int	sign;
@@ -90,4 +90,4 @@ int	main(int argc, char **argv)
 	char	*s1 = ft_substr(argv[1], start, len);
 	printf("start = > [%d], len = [%d], ft_strdup == > <<%s>>\n", start, len, s1);
 	printf("longueur string ==> %zu\n", ft_strlen(argv[1]));
-}
+}*/

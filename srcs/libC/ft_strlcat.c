@@ -1,6 +1,8 @@
+/*
 #include <string.h>
 #include <stdio.h>
-
+*/
+/*
 size_t	ft_strlen(const char *str)
 {
 	size_t i = -1;
@@ -8,10 +10,13 @@ size_t	ft_strlen(const char *str)
 		;
 	return (i);
 }
+*/
+
+#include "../libft.h"
 
 int	ft_is_char(char c)
 {
-	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }
@@ -39,7 +44,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (ft_strlen(dst) + ft_strlen(&src[i]));
 }
-
+/*
 int				main(void)
 {
 	char			dest[50] = "sefs fesa";
@@ -55,4 +60,4 @@ int				main(void)
 	
 	printf("ft_strlcat (dest) => <<%s>>\n", dest);
 	printf("dest: <<%s>> src: <<%s>>\n", dest, src);
-}
+}*/

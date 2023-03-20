@@ -1,6 +1,10 @@
+/*
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+*/
+
+#include "../libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -15,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		((unsigned char *)p)[i] = 0;
 	return (p);
 }
-
+/*
 size_t	ft_strlen(char *str)
 {
 	size_t	i = -1;
@@ -54,6 +58,7 @@ int	main(int argc, char **argv)
 	printf("et bah ouais y'a aucun diff psk je suis un boss ;) \n");
 	return (0);
 }
+*/
 /*
 Le code que vous avez fourni est une adaptation de la fonction calloc et est plus approprié pour allouer de la mémoire et initialiser tous les octets à zéro.
 

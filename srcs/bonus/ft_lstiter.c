@@ -7,7 +7,7 @@ Description
 	Iterates the list ’lst’ and applies the function
 	’f’ on the content of each node.
 */
-
+/*
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -34,6 +34,9 @@ t_list	*ft_create_elem(void *data)
 	elem->next = 0;
 	return (elem);
 }
+*/
+
+#include "../libft.h"
 
 void ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -44,7 +47,7 @@ void ft_lstiter(t_list *lst, void (*f)(void *))
 			lst = lst->next;
 		}
 }
-
+/*
 int	ft_atoi(char *str)
 {
 	int	res = 0;
@@ -78,4 +81,4 @@ int	main()
 	elem2->next = 0;
 
 	ft_lstiter(elem1, &ft_f);	
-}
+}*/

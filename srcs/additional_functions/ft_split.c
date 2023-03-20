@@ -12,10 +12,7 @@ Description
 	with a NULL pointer.
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+#include "../libft.h"
 
 int	ft_is_sep(char const c, char sep)
 {
@@ -85,7 +82,7 @@ char **ft_split(char const *s, char c)
 	str[++j] = NULL;
 	return ((char **)str);
 }
-
+/*
 //#include "ft_fgets.c"
 
 char	*ft_fgets(int fd, int size)
@@ -139,4 +136,4 @@ int	main()
 		ft_putstr("pour stop == click ENTER puis ecire STOP\n");
 		ft_putstr("pour un autre test input la string puis le sep\n");
 	}
-}
+}*/

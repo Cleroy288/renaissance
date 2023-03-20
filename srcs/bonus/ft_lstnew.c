@@ -6,7 +6,7 @@ Description
 	’next’ is initialized to NULL.
 */
 
-
+/*
 //#include "struct.h"
 #include <stdlib.h>
 #include <unistd.h>
@@ -28,6 +28,9 @@ void	ft_s(void *content)
 	while (((char *)content)[++i])
 		write (1, &content[i], 1);
 }
+*/
+
+#include "../libft.h"
 
 //selui la c'est celui qu'il faut rendre
 t_list *ft_lstnew(void *content)
@@ -44,7 +47,7 @@ t_list *ft_lstnew(void *content)
 	}
 	return (link);
 }
-
+/*
 t_list *ft_lstnew_list(t_list *list, void *content)
 {
 	t_list	*link_2;
@@ -88,4 +91,4 @@ int	main()
 	print_l(list);
 	ft_s("plusieurs elem crée, on pointe vers prés\n");
 	ft_s("ordre création toto, tata et tutu => ordre affichage est diff\n");
-}
+}*/

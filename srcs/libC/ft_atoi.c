@@ -1,7 +1,11 @@
+/*
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
+*/
+
+#include "../libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -24,9 +28,9 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	printf("test ft => %d\n", ft_atoi(argv[1]));
 	printf("test vrai fonction => %d\n", atoi(argv[1]));
-}
+}*/

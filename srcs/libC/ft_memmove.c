@@ -1,6 +1,10 @@
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+*/
+
+#include "../libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -23,7 +27,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
+/*
 int	ft_atoi(char *str)
 {
 	int	i = 0;
@@ -61,7 +65,7 @@ int main(int argc, char **argv)
 	}
 	return (0);
 }
-
+*/
 /*
 La fonction memmove permet de copier une zone de mémoire à une autre zone de mémoire. Contrairement à la fonction memcpy, elle permet de gérer les cas où les zones de mémoire source et de destination se chevauchent. Cela signifie que si vous voulez copier une zone de mémoire dans une autre zone qui se trouve en partie ou totalement dans la zone source, la fonction memmove permettra de gérer cela sans risquer d'écraser les données.
 

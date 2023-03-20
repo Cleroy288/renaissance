@@ -1,7 +1,10 @@
-#include <stdlib.h>
+
 /*
 The bzero() function writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing.
 */
+
+#include "../libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char *str;
@@ -15,7 +18,7 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
+/*
 #include <stdio.h>
 #include <libc.h>
 int	main(int argc, char **argv)
@@ -34,4 +37,4 @@ int	main(int argc, char **argv)
 		
 	}
 }
-
+*/

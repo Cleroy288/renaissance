@@ -1,5 +1,7 @@
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
+
+#include "../libft.h"
 
 char *ft_strchr(const char *str, int c)
 {
@@ -16,7 +18,7 @@ char *ft_strchr(const char *str, int c)
 	}
 	return (0);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	if (argc == 3)
@@ -27,4 +29,4 @@ int	main(int argc, char **argv)
 		char	*str2 = strchr(str, argv[2][0]);
 		printf("caractère recherché <<%c>>, retour vrai fonction <<%s>>\n", argv[2][0], str2);
 	}
-}
+}*/
